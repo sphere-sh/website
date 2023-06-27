@@ -1,8 +1,6 @@
 name: Feature Branch Pull Request
 
 on:
-  push:
-    branches: [ "feature/*" ]
   pull_request:
     branches: [ "feature/*" ]
 
