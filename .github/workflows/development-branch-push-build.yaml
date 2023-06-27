@@ -66,4 +66,4 @@ jobs:
           path: build
 
       - name: Curl request
-        run: curl -X GET ${{ secrets.DEPLOYMENT_WEB_HOOK }}
+        run: curl -X POST ${{ secrets.DEPLOYMENT_WEB_HOOK }}
