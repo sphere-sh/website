@@ -65,5 +65,5 @@ jobs:
           name: build
           path: build
 
-      - name: Curl request
+      - name: Trigger deployment
         run: curl -X POST ${{ secrets.DEPLOYMENT_WEB_HOOK }}
