@@ -2,7 +2,7 @@ name: Build on push to development branch
 
 on:
   push:
-    branches: [ "development" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: development
+    environment: production
 
     steps:
       - name: Download artifact
