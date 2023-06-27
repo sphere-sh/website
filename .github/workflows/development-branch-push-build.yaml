@@ -66,4 +66,4 @@ jobs:
           path: build
 
       - name: Trigger deployment
-        run: curl -X POST ${{ secrets.DEPLOYMENT_WEB_HOOK }} >> /dev/null
+        run: curl -X POST ${{ secrets.DEPLOYMENT_WEB_HOOK }} > /dev/null
